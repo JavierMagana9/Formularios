@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ladronzuelos</title>
+</head>
+<body>
+
+    <h2>Los ladronzuelos de bicicletas</h1>
+    <form>
+        <fieldset>
+            <legend>Elige tu bici</legend>
+        <label for="date">Dia</label><br>
+        <input type="date"><br>
+        <label for="time">Hora</label>
+        <input type="time"><br>
+        <label for="color">Color de bicicleta</label>
+        <input type="color"><br>
+        <label for="price">Rango de precio</label><br>
+        bajo<input type="range"> alto
+        <label for="bycicleType"><br>
+            Tipo de bicicleta</label>
+        <br>
+        <select name="tipo_bicicleta" id="tipoBicicleta">
+            <optgroup label="Bicicletas Urbanas">
+                <option value="paseo">Paseo</option>
+                <option value="senorial">Señorial</option>
+                <option value="antiPlebeyos">Anti-plebeyos</option>
+                <option value="por_encima_del_hombro">PorEncimaDelHombro</option>
+            </optgroup>
+            <optgroup label="Bicicletas de Montaña">
+                <option value="montana">Montaña</option>
+                <option value="gamusinos">Gamusinos</option>
+                <option value="huelefloresPremium">Hueleflores Premium</option>
+                <option value="fangoLover">Fango Lover</option>
+            </optgroup>
+            <optgroup label="Bicicletas de Carreras">
+                <option value="carreras">Carreras</option>
+                <option value="metroymedio">Metroymedio</option>
+                <option value="fluorescente">3 de la tarde. Fluorescente Edition</option>
+                <option value="grupitors">Grupitors</option>
+            </optgroup>
+        </select><br>
+        <br>
+        <select name="accesorios" multiple>
+            <option value="ruedines">Ruedines</option>
+            <option value="pegatinas">Pegatinas</option>
+            <option value="cestita">Cestita</option>
+            <option value="bombaDeAire">Bomba de aire</option>
+            <option value="timbre">Timbre</option>
+            <option value="foco">Foco</option>
+        </select>
+        <br> <br>
+        <section>
+        <label for="marcaBicicleta">¿Qué marca era?:</label>
+        <input type="text" list="marca"  placeholder="Elige o escribe una marca">
+        <datalist id="marca">
+            <option value="specialized"></option>
+            <option value="trek"></option>
+            <option value="merida"></option>
+            <option value="scott"></option>
+            <option value="giant"></option>
+            <option value="cube"></option>
+            <option value="lapierre"></option>
+            <option value="orbea"></option>
+            <option value="cannondale"></option>
+            <option value="bmc"></option>
+            <option value="canyon"></option>
+            <option value="look"></option>
+            <option value="protek"></option>
+            <option value="megamo"></option>
+            <option value="pinarello"></option>
+            <option value="bianchi"></option>
+            <option value="bh"></option>
+            <option value="factor"></option>
+            <option value="ghost"></option>
+            <option value="cervélo"></option>
+            <option value="argon"></option>
+        </datalist>
+    </section>
+    <br>
+    <input type="submit"> <input type="reset">
+</fieldset>
+    </form>
+</body>
+</html>
